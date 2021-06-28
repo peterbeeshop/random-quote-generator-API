@@ -15,12 +15,10 @@ btn.addEventListener("click", function () {
     .then((data) => {
       data.body.map((item) => {
         const { setup, punchline } = item;
-        // let h2 = document.createElement('h2');
+
         h2.textContent = setup;
-        // let h3 = document.createElement('h3');
+
         h3.innerText = punchline;
-        // div.appendChild(h2);
-        // div.appendChild(h3)
       });
     })
     .catch((err) => {
